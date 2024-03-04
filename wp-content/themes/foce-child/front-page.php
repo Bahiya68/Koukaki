@@ -3,15 +3,18 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main ">
-    <section class="banner">
+<main id="primary" class="site-main">
+    <section class="banner fade-in parallax">
 
-        <video id="background_video" autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
-            <source class="video" src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> " type="video/mp4">
+        <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
+            <source class="video"
+                src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
+                type="video/mp4">
         </video>
-        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
+        <img src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
+            alt=" logo Fleurs d'oranger & chats errants">
     </section>
-    <section id="#story" class="story ">
+    <section id="#story" class="story fade-in">
         <h2>L'histoire</h2>
         <article id="" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
@@ -62,7 +65,7 @@ get_header();
     </section>
 
 
-    <section id="studio">
+    <section id="studio" class="fade-in">
         <h2>Studio Koukaki</h2>
         <div>
             <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue
@@ -76,7 +79,7 @@ get_header();
                 errants”.</p>
         </div>
     </section>
-    <section>
+    <section class="fade-in">
         <?php get_template_part('/template-parts/content-nomioscar'); ?>
     </section>
 
@@ -85,4 +88,5 @@ get_header();
 
 
 <?php
+
 get_footer();

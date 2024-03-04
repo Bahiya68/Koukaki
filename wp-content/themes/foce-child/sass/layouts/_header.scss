@@ -11,11 +11,10 @@
 
 //Fade-in dans les sections
 
-.banner,
-.story,
-#studio,
-.nominationOscar { 
-    animation: fadeIn 5s; 
+.fade-in {
+    opacity: 0;
+    /* L'élément est initialement invisible */
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -47,14 +46,6 @@
         }     
         
 
-// Titre en mvmt continu
-
-
-
-#background_video {
-    position: absolute;
-    z-index: 0;
-    }
 
 
 .banner img {
@@ -68,7 +59,31 @@
           transform: translateY(100px);
         }
     }
-      
 
+    
+.banner {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}    
+// effet parallax
+.parallax {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centrez horizontalement */
+    align-items: center; /* Centrez verticalement */
+}
+
+.parallax video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 
 
