@@ -4,7 +4,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <section class="banner fade-in parallax">
+    <section class="section fade-in banner parallax ">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
             <source class="video"
@@ -14,9 +14,9 @@ get_header();
         <img src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
             alt=" logo Fleurs d'oranger & chats errants">
     </section>
-    <section id="#story" class="story fade-in">
-        <h2>L'histoire</h2>
-        <article id="" class="story__article">
+    <section class="story" id="#story">
+        <h2 class="section fade-in">L'histoire</h2>
+        <article id="" class="section fade-in story__article ">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
         <?php
@@ -29,7 +29,7 @@ get_header();
         );
         $characters_query = new WP_Query($args);
         ?>
-        <article id="characters">
+        <article class="section fade-in" id="characters">
             <div class="main-character">
                 <h3>Les personnages</h3>
                 <?php
@@ -55,7 +55,7 @@ get_header();
                 ?>
             </div>
         </article>
-        <article id="place">
+        <article class="section fade-in" id="place">
             <div>
                 <h3>Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
@@ -65,7 +65,7 @@ get_header();
     </section>
 
 
-    <section id="studio" class="fade-in">
+    <section id="studio" class="section fade-in">
         <h2>Studio Koukaki</h2>
         <div>
             <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue
@@ -79,7 +79,7 @@ get_header();
                 errants”.</p>
         </div>
     </section>
-    <section class="fade-in">
+    <section class="section fade-in">
         <?php get_template_part('/template-parts/content-nomioscar'); ?>
     </section>
 

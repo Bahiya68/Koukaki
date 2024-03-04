@@ -1,3 +1,5 @@
+<!-- Effet Cover -->
+
 <body>
     <!-- Swiper -->
     <div class="swiper mySwiper">

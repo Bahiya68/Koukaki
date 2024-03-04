@@ -17,20 +17,6 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
-.fade-in {
-  opacity: 0;
-  /* L'élément est initialement invisible */
-  animation: fadeIn 3s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .site-footer::after,
 .site-footer ul::after,
 .site-footer::before,
@@ -67,25 +53,6 @@
   position: relative;
   height: 50vh;
   overflow: hidden;
-}
-
-.parallax {
-  position: relative;
-  height: 50vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Centrez horizontalement */
-  align-items: center; /* Centrez verticalement */
-}
-
-.parallax video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
 }
 
 /*!
@@ -126,35 +93,35 @@
   height: 129px;
 }
 
-/*!
- Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
- Theme URI: https://www.koukaki.local
- Author: Studio Koukaki
- Author URI: https://www.koukaki.local
- Template: foce
- Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
- Version: 0.1
- */
-html,
-body {
+.parallax {
   position: relative;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centrez horizontalement */
+  align-items: center; /* Centrez verticalement */
+}
+
+.parallax video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    animation: fadeIn 3s ease-in-out forwards;
+  }
 }/*# sourceMappingURL=style.css.map */

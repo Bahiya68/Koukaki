@@ -9,19 +9,7 @@
  */
 
 
-//Fade-in dans les sections
 
-.fade-in {
-    opacity: 0;
-    /* L'élément est initialement invisible */
-    animation: fadeIn 3s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
 
  // Rotation des fleurs
 
@@ -60,30 +48,11 @@
         }
     }
 
-    
 .banner {
     position: relative;
     height: 50vh;
     overflow: hidden;
 }    
-// effet parallax
-.parallax {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Centrez horizontalement */
-    align-items: center; /* Centrez verticalement */
-}
 
-.parallax video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
 
 
