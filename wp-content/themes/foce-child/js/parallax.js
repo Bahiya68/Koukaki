@@ -5,8 +5,8 @@ const logo = document.querySelector(".parallax img");
 
 window.addEventListener("scroll", () => {
   const scrollValue = window.scrollY;
-  const videoPosition = scrollValue * 0.5;
-  const logoPosition = -scrollValue * 0.5;
+  const videoPosition = scrollValue * 0.2;
+  const logoPosition = -scrollValue * 0.2;
 
   video.style.transform = `translateY(${videoPosition}px)`;
   logo.style.transform = `translateY(${logoPosition}px)`;
