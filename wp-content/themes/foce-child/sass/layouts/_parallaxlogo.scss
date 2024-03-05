@@ -1,19 +1,23 @@
-//effet parallax
-.parallax {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Centrez horizontalement */
-    align-items: center; /* Centrez verticalement */
+
+.logo {
+    position: fixed;
 }
 
-.parallax video {
-    position: absolute;
-    //top: 0;
-    //left: 0;
-    //width: 100%;
-    //height: 100%;
-    //object-fit: cover;
-    //z-index: 1;
-}
+.banner img {
+    z-index: 2;
+    animation: floatAnimation 3s ease-in-out 0s infinite;
+    max-width: 620px ;
+
+    }
+    @keyframes floatAnimation{
+        
+    0% { transform: translate(0,  0px); }
+    25%  { transform: translate(10px, 0px); }
+    50%  { transform: translate(10px, 10px); }
+    75%  { transform: translate(0px, 10px); }
+    100%   { transform: translate(0, 0px); }
+    }
+
+.banner {
+    overflow: hidden;
+}   

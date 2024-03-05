@@ -1,13 +1,19 @@
-// parallax+css
-const parallax = document.querySelector(".parallax");
-const video = document.querySelector(".parallax video");
-const logo = document.querySelector(".parallax img");
+// Sélectionnez l'élément sur lequel vous souhaitez effectuer l'action
+var element = document.querySelector(".logo");
 
-window.addEventListener("scroll", () => {
-  const scrollValue = window.scrollY;
-  const videoPosition = scrollValue * 0.2;
-  const logoPosition = -scrollValue * 0.2;
+// Fonction pour détecter le défilement de la page
+window.addEventListener("scroll", function () {
+  // Hauteur à laquelle vous souhaitez remplacer les classes (en pixels)
+  var hauteurCible = 275; // Par exemple, 300 pixels
 
-  video.style.transform = `translateY(${videoPosition}px)`;
-  logo.style.transform = `translateY(${logoPosition}px)`;
+  // Vérifiez si la position de défilement de la page dépasse la hauteur cible
+  if (window.scrollY > hauteurCible) {
+    // Remplacez la classe actuelle par la nouvelle classe
+    element.classList.remove("logo");
+    element.classList.add("banner");
+  } else {
+    // Remplacez la nouvelle classe par la classe actuelle si la hauteur de défilement est inférieure à la hauteur cible
+    element.classList.remove("banner");
+    element.classList.add("logo");
+  }
 });

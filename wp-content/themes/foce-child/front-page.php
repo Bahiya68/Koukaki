@@ -4,19 +4,19 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <section class="section fade-in banner parallax ">
+    <section class="section banner">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
             <source class="video"
                 src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
                 type="video/mp4">
         </video>
-        <img src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
+        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
             alt=" logo Fleurs d'oranger & chats errants">
     </section>
     <section class="story" id="#story">
-        <h2 class="section fade-in animated-title">L'histoire</h2>
-        <article id="" class="section fade-in story__article ">
+        <h2 class="section animated-title">L'histoire</h2>
+        <article id="" class="section story__article ">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
         <?php
@@ -29,17 +29,17 @@ get_header();
         );
         $characters_query = new WP_Query($args);
         ?>
-        <article class="section fade-in" id="characters">
-            <div class="main-character">
+        <article class="section" id="characters">
+            <!--<div class="main-character">
                 <h3>Les personnages</h3>
-                <?php
-                $main_character = $characters_query->posts[0];
-                echo '<figure>';
-                echo get_the_post_thumbnail($main_character->ID, 'full');
-                echo '<figcaption>' . $main_character->post_title . '</figcaption>';
-                echo '</figure>';
-                $characters_query->next_post();
-                ?>
+                 <?php
+                    $main_character = $characters_query->posts[0];
+                    echo '<figure>';
+                    echo get_the_post_thumbnail($main_character->ID, 'full');
+                    echo '<figcaption>' . $main_character->post_title . '</figcaption>';
+                    echo '</figure>';
+                    $characters_query->next_post();
+                    ?>
             </div>
             <div class="other-characters">
                 <?php
@@ -52,10 +52,12 @@ get_header();
                     echo '</figcaption>';
                     echo '</figure>';
                 }
-                ?>
-            </div>
+                ?> 
+            </div>-->
+            <?php get_template_part('/template-parts/carrousel'); ?>
         </article>
-        <article class="section fade-in" id="place">
+
+        <article class="section" id="place">
             <div>
                 <h3>Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
@@ -65,7 +67,7 @@ get_header();
     </section>
 
 
-    <section id="studio" class="section fade-in">
+    <section id="studio" class="section">
         <h2>Studio Koukaki</h2>
         <div>
             <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue
@@ -78,9 +80,6 @@ get_header();
                 sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats
                 errants”.</p>
         </div>
-    </section>
-    <section class="section fade-in">
-        <?php get_template_part('/template-parts/content-nomioscar'); ?>
     </section>
 
 

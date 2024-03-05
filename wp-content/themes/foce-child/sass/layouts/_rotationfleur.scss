@@ -32,26 +32,5 @@
             }
         }     
         
-
-
-
-.banner img {
-    position: relative;
-    z-index: 2;
-    animation: floatAnimation 5s ease-in-out 0s infinite;
-    left:20px;
-    }
-    @keyframes floatAnimation{
-        50%{
-          transform: translateY(100px);
-        }
-    }
-
-.banner {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
-}    
-
-
+ 
 

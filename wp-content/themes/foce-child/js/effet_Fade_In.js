@@ -5,8 +5,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("fade-in");
       return;
     }
-
-    entry.target.classList.remove("fade-in");
+    // entry.target.classList.remove("fade-in");
   });
 });
 
