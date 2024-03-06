@@ -29,13 +29,10 @@ add_action('wp_enqueue_scripts', 'my_custom_scripts');
 
 
 // coverflow
-function enqueue_swiper_assets()
+//function enqueue_swiper_assets()
 {
     // Enregistrez et chargez le fichier CSS de SwiperJS
-    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '6.3.1');
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
     // Enregistrez et chargez le fichier JavaScript de SwiperJS
-    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '6.3.1', true);
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
 }
-
-// Ajoutez les styles et scripts à la file d'attente
-add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');

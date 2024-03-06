@@ -1,20 +1,28 @@
-.swiper-container {
+// .swiper-wrapper {
+//     max-width: 1440px;
+//     width: 100%;
+// }
+
+
+.swiper {
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    display:flex;
-    flex-direction: row;
-  }
+  
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-  }
+    &-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+  
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+        img {
+        display: block;
+        width: 100%;
+        }
+    }   
 
+
+}

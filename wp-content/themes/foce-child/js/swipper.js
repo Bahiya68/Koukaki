@@ -1,32 +1,20 @@
-var swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper", {
   effect: "coverflow",
-  pagination: ".swiper-pagination",
   grabCursor: true,
-  centeredSlides: true,
+  loop: true,
   slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 200,
-    modifier: 1,
-    slideShadows: true,
-)},
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
-// var swiper = new Swiper(".swiper-container", {
-//     spaceBetween: 60,
-//     speed: 1000,
-//     autoplay: {
-//       delay: 250,
-//     },
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     loop: true,
-//     slidesPerView: 3,
-//     coverflowEffect: {
-//       rotate: 60,
-//       depth: 100,
-//       slideShadows: false,
-//     },
-//   }); 
-  
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
+});
