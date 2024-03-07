@@ -8,6 +8,50 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
+#titreh3 {
+  width: 65%;
+}
+
+.Animetitre,
+.Animetitre2 {
+  opacity: 0;
+}
+
+.animateTitle,
+.animateTitle2 {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+}
+
+.animateTitle {
+  animation: KframeAnimateTitre1 1s ease-in-out;
+}
+
+.animateTitle2 {
+  animation: KframeAnimateTitre2 1s ease-in-out;
+}
+
+@keyframes KframeAnimateTitre1 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes KframeAnimateTitre2 {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*!
  Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
  Theme URI: https://www.koukaki.local
@@ -116,7 +160,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .fade-in {
-    animation: fadeIn 3s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
   }
 }
 .site-footer {
@@ -139,8 +183,8 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   text-align: center;
 }
 .swiper-slide img {

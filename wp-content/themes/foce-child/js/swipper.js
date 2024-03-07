@@ -17,4 +17,5 @@ const swiper = new Swiper(".swiper", {
     modifier: 1,
     slideShadows: false,
   },
+  initialSlide: 1,
 });
