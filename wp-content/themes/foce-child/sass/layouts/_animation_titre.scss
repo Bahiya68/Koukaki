@@ -6,7 +6,7 @@
 
 // CSS pour l'animation des titres
 
-$vitesseTitre: 3s;
+$vitesseTitre: 2s;
 
 .Animetitre,
 .Animetitre2 {
@@ -21,15 +21,15 @@ $vitesseTitre: 3s;
 	}
 
 .animateTitle {
-	animation: KframeAnimateTitre1 $vitesseTitre ease-in-out;
+	animation: AnimateTitre1 $vitesseTitre ease-in-out;
 	}
 
 .animateTitle2 {
-	animation: KframeAnimateTitre2 $vitesseTitre ease-in-out;
+	animation: AnimateTitre2 $vitesseTitre ease-in-out;
 	}
 
 // Keyframes animation des titres
-@keyframes KframeAnimateTitre1 {
+@keyframes AnimateTitre1 {
     0% {
       transform: translateY(100%);
       opacity: 0;
@@ -39,7 +39,7 @@ $vitesseTitre: 3s;
       opacity: 1;
     }
   }
-  @keyframes KframeAnimateTitre2 {
+  @keyframes AnimateTitre2 {
     0% {
       transform: translateY(150%);
       opacity: 0;

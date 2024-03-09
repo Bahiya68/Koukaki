@@ -1,4 +1,5 @@
-// Create the observer like the examples above
+//***********Create the observer like the examples above
+
 const observer1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -15,7 +16,8 @@ const Section1 = document.querySelectorAll(".Animetitre");
 // Loop over the elements and add each one to the observer
 Section1.forEach((element) => observer1.observe(element));
 
-// Create the observer like the examples above
+//**********Create the observer like the examples above
+
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

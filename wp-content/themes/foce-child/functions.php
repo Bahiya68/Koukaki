@@ -26,7 +26,6 @@ function my_custom_scripts()
     wp_enqueue_script('swipper', get_stylesheet_directory_uri() . '/js/swipper.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('rotation', get_stylesheet_directory_uri() . '/js/rotationfleur.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('animation_titre', get_stylesheet_directory_uri() . '/js/animation_titre.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('animation_scroll', get_stylesheet_directory_uri() . '/js/animation_scroll.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'my_custom_scripts');
 

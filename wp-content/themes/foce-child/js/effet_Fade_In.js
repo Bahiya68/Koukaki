@@ -1,4 +1,5 @@
-// Create the observer like the examples above
+//*********Create the observer like the examples above
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
