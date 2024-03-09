@@ -25,11 +25,11 @@
 }
 
 .animateTitle {
-  animation: KframeAnimateTitre1 1s ease-in-out;
+  animation: KframeAnimateTitre1 3s ease-in-out;
 }
 
 .animateTitle2 {
-  animation: KframeAnimateTitre2 1s ease-in-out;
+  animation: KframeAnimateTitre2 3s ease-in-out;
 }
 
 @keyframes KframeAnimateTitre1 {
@@ -69,7 +69,7 @@
 #studio h2::after,
 .story h2::after,
 .fleur {
-  animation: rotate_flower 10s normal linear infinite;
+  animation: rotate_flower 15s normal linear infinite;
   line-height: 0;
 }
 
@@ -160,7 +160,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .fade-in {
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 3s ease-in-out forwards;
   }
 }
 .site-footer {
@@ -190,4 +190,9 @@
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+h1 {
+  width: 308px;
+  height: 84px;
 }/*# sourceMappingURL=style.css.map */

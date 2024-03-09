@@ -1,37 +1,33 @@
-console.log(" le script title-animation-script.js est lancé ");
-
-//premiere partie du titre
-const observer = new IntersectionObserver((entries) => {
-  // parcourt chaque élément observé
+// Create the observer like the examples above
+const observer1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // si l'élément est visible
     if (entry.isIntersecting) {
-      // ajouter classe
       entry.target.classList.add("animateTitle");
-    } else {
-      // supprimer  classe
-      entry.target.classList.remove("animateTitle");
+      return;
     }
+    entry.target.classList.remove("animateTitle");
   });
 });
 
-const sections = document.querySelectorAll(".Animetitre");
-sections.forEach((section) => {
-  observer.observe(section);
-});
+// Get multiple elements instead of a single one using "querySelectorAll"
+const Section1 = document.querySelectorAll(".Animetitre");
 
-//deuxieme partie du titre
+// Loop over the elements and add each one to the observer
+Section1.forEach((element) => observer1.observe(element));
+
+// Create the observer like the examples above
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("animateTitle2");
-    } else {
-      entry.target.classList.remove("animateTitle2");
+      return;
     }
+    entry.target.classList.remove("animateTitle2");
   });
 });
 
-const sections2 = document.querySelectorAll(".Animetitre2");
-sections2.forEach((section) => {
-  observer2.observe(section);
-});
+// Get multiple elements instead of a single one using "querySelectorAll"
+const Section2 = document.querySelectorAll(".Animetitre2");
+
+// Loop over the elements and add each one to the observer
+Section2.forEach((element) => observer2.observe(element));

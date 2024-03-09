@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 // Get multiple elements instead of a single one using "querySelectorAll"
-const squares = document.querySelectorAll(".section");
+const fadeInSection = document.querySelectorAll(".section");
 
 // Loop over the elements and add each one to the observer
-squares.forEach((element) => observer.observe(element));
+fadeInSection.forEach((element) => observer.observe(element));
