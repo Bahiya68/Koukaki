@@ -8,6 +8,7 @@
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@800&display=swap");
 #titreh3 {
   width: 65%;
 }
@@ -52,35 +53,187 @@
     opacity: 1;
   }
 }
-/*!
- Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
- Theme URI: https://www.koukaki.local
- Author: Studio Koukaki
- Author URI: https://www.koukaki.local
- Template: foce
- Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
- Version: 0.1
- */
-.site-footer::after,
-.site-footer ul::after,
-.site-footer::before,
-.story__article::after,
-#studio h2::before,
-#studio h2::after,
-.story h2::after,
-.fleur {
-  animation: rotate_flower 15s normal linear infinite;
-  line-height: 0;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+}
+.site-footer {
+  flex-direction: column;
 }
 
-@keyframes rotate_flower {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nominationOscar {
+  bottom: 220px;
 }
+
+.site-footer::after {
+  bottom: 34em;
+}
+
+.burger {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  top: -38px;
+  left: 1280px;
+}
+.burger span {
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: black;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+}
+.burger span::before, .burger span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.burger span:before {
+  transform: translateY(-10px);
+}
+.burger span::after {
+  transform: translateY(10px);
+}
+.burger.active span {
+  background-color: transparent;
+}
+.burger.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+.site-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.signature {
+  margin-left: 80px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  height: 12px;
+}
+
+.menuFull {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuFull a {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 64px;
+}
+.menuFull ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.logoMenuBurger {
+  margin-top: 30px;
+  width: 154px;
+  align-content: center;
+}
+
+.menuFull.nav_open {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-items {
+  display: none;
+  background-color: #FFF5E9;
+}
+
+#chat_bleu,
+#chat_orange,
+#chat_gris {
+  animation: floatAnimation 5s infinite alternate;
+}
+
+#chat_bleu,
+#chat_orange,
+#chat_gris,
+#sunflower,
+#orchid,
+#random_flower,
+#flower,
+#hibiscus {
+  position: absolute;
+}
+
+#orchid {
+  width: 170px;
+  top: 117px;
+  left: -54px;
+}
+
+#random_flower {
+  width: 75px;
+  top: 475px;
+  left: 1396px;
+}
+
+#flower {
+  width: 70px;
+  top: 563px;
+  left: 213px;
+}
+
+#sunflower {
+  width: 216px;
+  top: 170px;
+  left: 1040px;
+}
+
+#hibiscus {
+  width: 626px;
+  top: 740px;
+  left: 1122px;
+}
+
+#chat_bleu {
+  width: 110px;
+  top: 274px;
+  left: 267px;
+}
+
+#chat_orange {
+  width: 105px;
+  top: 827px;
+  left: 80px;
+}
+
+#chat_gris {
+  width: 154px;
+  top: 550px;
+  left: 1076px;
+}
+
 /*!
  Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
  Theme URI: https://www.koukaki.local
@@ -150,29 +303,41 @@
   overflow: hidden;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .fade-in {
-    animation: fadeIn 3s ease-in-out forwards;
-  }
-}
-.site-footer {
-  flex-direction: column;
+/*!
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local
+ Template: foce
+ Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+.site-footer::after,
+.site-footer ul::after,
+.site-footer::before,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+.story h2::after,
+.fleur {
+  animation: rotate_flower 15s normal linear infinite;
+  line-height: 0;
 }
 
-.nominationOscar {
-  bottom: 220px;
+@keyframes rotate_flower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.site-footer::after {
-  bottom: 34em;
+#sunflower,
+#orchid,
+#random_flower,
+#flower,
+#hibiscus {
+  animation: rotate_flower 15s normal linear infinite;
 }
 
 .swiper {
@@ -190,9 +355,4 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-}
-
-h1 {
-  width: 308px;
-  height: 84px;
 }/*# sourceMappingURL=style.css.map */
