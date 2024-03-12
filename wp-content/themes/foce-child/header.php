@@ -30,8 +30,7 @@
         <header id="masthead" class="site-header">
             <nav id="site-navigation" class="main-navigation">
                 <ul>
-                    <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                            rel="home"><?php bloginfo('name'); ?></a></li>
+                    <li class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></li>
                 </ul>
                 <div class="burger">
                     <span></span>
@@ -39,29 +38,18 @@
 
             </nav><!-- #site-navigation -->
 
-            <section class="menu-items menuFull nav_open">
+            <section class="menu-items menuFull">
                 <div class="titreMenuBurger">
-                    <img class="logoMenuBurger"
-                        src=" <?php echo get_stylesheet_directory_uri() . '/images/logoburger.png'; ?> "
-                        alt=" logo Fleurs d'oranger & chats errants">
+                    <img class="logoMenuBurger" src=" <?php echo get_stylesheet_directory_uri() . '/images/logoburger.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
                 </div>
-                <img id="orchid" src=" <?php echo get_template_directory_uri() . '/assets/images/orchid.png'; ?> "
-                    alt="Fleur violette">
-                <img id="hibiscus" src=" <?php echo get_template_directory_uri() . '/assets/images/Hibiscus.png'; ?> "
-                    alt="Hibiscus">
-                <img id="sunflower" src=" <?php echo get_template_directory_uri() . '/assets/images/Sunflower.png'; ?> "
-                    alt="Sunflower">
-                <img id="flower" src=" <?php echo get_template_directory_uri() . '/assets/images/flower.png'; ?> "
-                    alt="Fleur">
-                <img id="random_flower"
-                    src=" <?php echo get_template_directory_uri() . '/assets/images/random_flower.png'; ?> "
-                    alt="Fleur rose">
-                <img id="chat_bleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_bleu.png'; ?> "
-                    alt="Chat Bleu">
-                <img id="chat_orange" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_orange.png'; ?> "
-                    alt="Chat Orange">
-                <img id="chat_gris" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_gris.png'; ?> "
-                    alt="Chat Gris">
+                <img id="orchid" src=" <?php echo get_template_directory_uri() . '/assets/images/orchid.png'; ?> " alt="Fleur violette">
+                <img id="hibiscus" src=" <?php echo get_template_directory_uri() . '/assets/images/Hibiscus.png'; ?> " alt="Hibiscus">
+                <img id="sunflower" src=" <?php echo get_template_directory_uri() . '/assets/images/Sunflower.png'; ?> " alt="Sunflower">
+                <img id="flower" src=" <?php echo get_template_directory_uri() . '/assets/images/flower.png'; ?> " alt="Fleur">
+                <img id="random_flower" src=" <?php echo get_template_directory_uri() . '/assets/images/random_flower.png'; ?> " alt="Fleur rose">
+                <img id="chat_bleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_bleu.png'; ?> " alt="Chat Bleu">
+                <img id="chat_orange" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_orange.png'; ?> " alt="Chat Orange">
+                <img id="chat_gris" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_gris.png'; ?> " alt="Chat Gris">
 
                 <ul class="liste">
                     <li><a href="#story">Histoire</a></li>

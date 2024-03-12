@@ -10,10 +10,10 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > hauteurCible) {
     // Remplacez la classe actuelle par la nouvelle classe
     element.classList.remove("logo");
-    element.classList.add("banner");
+    element.classList.add("logoposition");
   } else {
     // Remplacez la nouvelle classe par la classe actuelle si la hauteur de défilement est inférieure à la hauteur cible
-    element.classList.remove("banner");
+    element.classList.remove("logoposition");
     element.classList.add("logo");
   }
 });

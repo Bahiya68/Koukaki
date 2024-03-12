@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@800&display=swap');
 
+
+// #story,
+// #characters,
+// #place,
+// #studio {
+//     scroll-behavior: smooth;
+// }
+
+
 // Création et animation de l'icon burger
 .burger {
     width: 42px;
@@ -86,6 +95,7 @@
         flex-direction: column;
         align-items: center;
         list-style-type: none;
+        
     }
 
 }
@@ -93,15 +103,11 @@
 .logoMenuBurger {
     margin-top: 30px;
     width: 154px;
-    
-    
-    align-content: center;
+    //align-items: center;
     
 }
 
 // Page menu burger
-// 
-
 
 .menuFull.nav_open {
          opacity: 1;
@@ -111,7 +117,23 @@
          transition: opacity 0.5s ease-in, height 0.5s ease-in;
          width: 100%;
          overflow: hidden;
+         animation: fadeInRight .5s ease forwards;
+
+        
      }
+
+     @keyframes fadeInRight {
+  
+        0% {
+            opacity: 0;
+            left: 20%;
+        }
+    
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
    
 .menu-items {
     display: none;
