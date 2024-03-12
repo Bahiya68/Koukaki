@@ -8,12 +8,9 @@ get_header();
     <section class="section banner">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
-            <source class="video"
-                src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
-                type="video/mp4">
+            <source class="video" src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> " type="video/mp4">
         </video>
-        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
-            alt=" logo Fleurs d'oranger & chats errants">
+        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
     </section>
     <section class="story" id="#story">
         <h2 class="section">
