@@ -126,7 +126,6 @@
 }
 
 .signature {
-  margin-left: 80px;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   height: 12px;
@@ -145,9 +144,8 @@
   visibility: visible;
   display: block;
   transition: opacity 0.5s ease-in, height 0.5s ease-in;
-  width: 100%;
+  width: 1440px;
   overflow: hidden;
-  animation: fadeInRight 0.5s ease forwards;
 }
 
 .menuFull a {
@@ -157,7 +155,6 @@
   font-weight: bold;
 }
 .menuFull ul {
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +165,12 @@
   -webkit-filter: drop;
 }
 
+.liste {
+  padding: 0;
+}
+
 .titreMenuBurger {
+  width: 1440px;
   display: flex;
   justify-content: center;
 }
@@ -212,49 +214,49 @@
 
 #orchid {
   width: 170px;
-  top: 117px;
+  top: 50px;
   left: -54px;
 }
 
 #random_flower {
   width: 75px;
-  top: 475px;
+  top: 445px;
   left: 1396px;
 }
 
 #flower {
   width: 70px;
-  top: 563px;
+  top: 350px;
   left: 213px;
 }
 
 #sunflower {
   width: 216px;
-  top: 170px;
+  top: 100px;
   left: 1040px;
 }
 
 #hibiscus {
-  width: 626px;
-  top: 740px;
-  left: 1122px;
+  width: 580px;
+  top: 530px;
+  left: 1140px;
 }
 
 #chat_bleu {
   width: 110px;
-  top: 274px;
+  top: 150px;
   left: 267px;
 }
 
 #chat_orange {
   width: 105px;
-  top: 827px;
-  left: 80px;
+  top: 580px;
+  left: 190px;
 }
 
 #chat_gris {
   width: 154px;
-  top: 550px;
+  top: 350px;
   left: 1076px;
 }
 
@@ -306,7 +308,7 @@ ul {
 
 .logoposition {
   position: absolute;
-  top: 675px;
+  top: 620px;
 }
 
 .banner img {
