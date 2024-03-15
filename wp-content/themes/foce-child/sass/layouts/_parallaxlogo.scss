@@ -26,9 +26,14 @@
     }
 
 .banner {
+    
     overflow: hidden;
 }   
-
+.banner video {
+    
+    margin-top: 80px;
+    z-index: -1;
+}
 
 
 

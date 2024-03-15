@@ -63,11 +63,11 @@
 
 // mise en forme de la barre nav
 
-.site-title {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+// .site-title {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+// }
 
 .signature {
     margin-left: 80px;
@@ -79,26 +79,45 @@
 
 // Titre menu burger
 
-.menuFull {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-navigation {
+	width: 1440px;
+    position: fixed;
+}
 
-    & a {
-        text-decoration: none;
-        font-family: "Roboto Mono" ,monospace;
-        font-size: 64px;
+.menuFull.nav_open {
+         margin-top: 80px;
+         position: fixed;
+         opacity: 1;
+         height: 100vh;
+         visibility: visible;
+         display: block;
+         transition: opacity 0.5s ease-in, height 0.5s ease-in;
+         width: 100%;
+         overflow: hidden;
+         animation: fadeInRight .5s ease forwards;
         
     }
-    & ul {
+.menuFull {
+        & a {
+         text-decoration: none;
+         font-family: "Roboto Mono" ,monospace;
+         font-size: 64px;
+         font-weight: bold;
+         
+        
+     }
+        & ul {
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
         list-style-type: none;
 
+       
         & a:hover {
             filter: drop-shadow(0px 0px 5px #ff5c00);
 	            -webkit-filter: drop;
+            
         }
         
     }
@@ -118,18 +137,7 @@
 
 // Page menu burger
 
-.menuFull.nav_open {
-         opacity: 1;
-         height: 100vh;
-         visibility: visible;
-         display: block;
-         transition: opacity 0.5s ease-in, height 0.5s ease-in;
-         width: 100%;
-         overflow: hidden;
-         animation: fadeInRight .5s ease forwards;
 
-        
-     }
 
      @keyframes fadeInRight {
   
@@ -215,5 +223,9 @@
     width: 154px;
     top: 550px;
     left: 1076px;
+}
+
+ul {
+    margin: 0 !important; 
 }
 

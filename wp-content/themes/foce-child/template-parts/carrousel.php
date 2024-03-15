@@ -1,20 +1,36 @@
-<div class="swiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/kawaneko.png'; ?> " alt="Chat jaune Kawaneko">
-        </div>
-        <div class="swiper-slide">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Orenjiiro.png'; ?> " alt="Chat bleu Orenjiiro">
-        </div>
-        <div class="swiper-slide">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Pinku.png'; ?> " alt="Chat rose Pinku">
-        </div>
-        <div class="swiper-slide">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Tenshi.png'; ?> " alt="Chat vert Tenshi">
-        </div>
-        <div class="swiper-slide">
-            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Jaakuna.png'; ?> " alt="Chat orange Jaakuna">
-        </div>
+<?php
+$args = array(
+    'post_type' => 'characters',
+    'posts_per_page' => -1,
+    'meta_key'  => '_main_char_field',
+    'orderby'   => 'meta_value_num',
+);
+$characters_query = new WP_Query($args);
+?>
 
-    </div>
-</div>
+<article class="section" id="characters">
+    <div class="main-character">
+        <h3 id="#place" class="titreh3">
+            <span class="Animetitre animateTitle">Les</span>
+            <span class="Animetitre2 animateTitle2">&nbsp;personnages</span>
+        </h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <?php
+                while ($characters_query->have_posts()) {
+                    $characters_query->the_post();
+                    echo '<div class="swiper-slide">';
+                    echo '<figure>';
+                    echo get_the_post_thumbnail(get_the_ID(), 'full');
+                    echo '<figcaption>';
+                    the_title();
+                    echo '</figcaption>';
+                    echo '</figure>';
+                    echo '</div>';
+                };
+                ?>
+            </div>
+        </div>
+</article>

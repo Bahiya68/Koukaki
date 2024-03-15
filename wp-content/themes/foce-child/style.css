@@ -9,11 +9,6 @@
  Version: 0.1
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@800&display=swap");
-.banner video {
-  position: absolute;
-  z-index: -1;
-}
-
 .titreh3 {
   width: 65%;
 }
@@ -130,12 +125,6 @@
   transform: translateY(0px) rotateZ(-45deg);
 }
 
-.site-title {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
 .signature {
   margin-left: 80px;
   text-align: center;
@@ -143,17 +132,32 @@
   height: 12px;
 }
 
-.menuFull {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-navigation {
+  width: 1440px;
+  position: fixed;
 }
+
+.menuFull.nav_open {
+  margin-top: 80px;
+  position: fixed;
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, height 0.5s ease-in;
+  width: 100%;
+  overflow: hidden;
+  animation: fadeInRight 0.5s ease forwards;
+}
+
 .menuFull a {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   font-size: 64px;
+  font-weight: bold;
 }
 .menuFull ul {
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,17 +176,6 @@
 .logoMenuBurger {
   margin-top: 30px;
   width: 200px;
-}
-
-.menuFull.nav_open {
-  opacity: 1;
-  height: 100vh;
-  visibility: visible;
-  display: block;
-  transition: opacity 0.5s ease-in, height 0.5s ease-in;
-  width: 100%;
-  overflow: hidden;
-  animation: fadeInRight 0.5s ease forwards;
 }
 
 @keyframes fadeInRight {
@@ -265,6 +258,10 @@
   left: 1076px;
 }
 
+ul {
+  margin: 0 !important;
+}
+
 /*!
  Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
  Theme URI: https://www.koukaki.local
@@ -339,6 +336,11 @@
   overflow: hidden;
 }
 
+.banner video {
+  margin-top: 80px;
+  z-index: -1;
+}
+
 /*!
  Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
  Theme URI: https://www.koukaki.local
@@ -374,6 +376,10 @@
 #flower,
 #hibiscus {
   animation: rotate_flower 15s normal linear infinite;
+}
+
+:root {
+  --vitesseFleurs: 5s;
 }
 
 .swiper {

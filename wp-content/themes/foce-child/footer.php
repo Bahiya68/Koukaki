@@ -12,8 +12,8 @@
 
 ?>
 
-<footer id="colophon" class="site-footer">
-    <section class="section">
+<footer id="colophon" class="site-footer section">
+    <section>
         <?php get_template_part('/template-parts/content-nomioscar'); ?>
     </section>
     <ul>
