@@ -8,7 +8,9 @@
  Version: 0.1
  */
 
-
+ :root {
+    --vitesseFleurs: 15s;
+  }
  // Rotation des fleurs
 
 .site-footer::after,
@@ -19,9 +21,10 @@
 #studio h2::after,
 .story h2::after,
 .fleur {
-    animation: rotate_flower 15s normal linear infinite;
+    animation: rotate_flower var(--vitesseFleurs) normal linear infinite;
     line-height: 0;
         }
+        
     @keyframes rotate_flower {
         from {
             transform: rotate(0deg);
@@ -31,8 +34,6 @@
             }
             
         }     
-
-
 
 
 // Rotation des fleurs du menu Burger
@@ -45,7 +46,4 @@
   }
 
 
-  :root {
-    --vitesseFleurs: 5s;
-  }
-  
+

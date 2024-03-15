@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@800&display=swap');
 
 
-// #story,
-// #characters,
-// #place,
-// #studio {
-//     scroll-behavior: smooth;
-// }
+ #story,
+ #characters,
+ #place,
+ #studio {
+    scroll-behavior: smooth;
+ }
 
 
 // Création et animation de l'icon burger
@@ -94,7 +94,7 @@
          transition: opacity 0.5s ease-in, height 0.5s ease-in;
          width: 1440px;
          overflow: hidden;
-         //animation: fadeInRight .5s ease forwards;
+        
         
     }
 .menuFull {
@@ -107,7 +107,6 @@
         
      }
         & ul {
-        //margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;

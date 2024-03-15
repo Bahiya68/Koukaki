@@ -85,6 +85,13 @@
   bottom: 34em;
 }
 
+#story,
+#characters,
+#place,
+#studio {
+  scroll-behavior: smooth;
+}
+
 .burger {
   width: 42px;
   height: 24px;
@@ -352,6 +359,10 @@ ul {
  Description: Thème enfant à l'ocasion de la nomination aux Oscars Shorts
  Version: 0.1
  */
+:root {
+  --vitesseFleurs: 15s;
+}
+
 .site-footer::after,
 .site-footer ul::after,
 .site-footer::before,
@@ -360,7 +371,7 @@ ul {
 #studio h2::after,
 .story h2::after,
 .fleur {
-  animation: rotate_flower 15s normal linear infinite;
+  animation: rotate_flower var(--vitesseFleurs) normal linear infinite;
   line-height: 0;
 }
 
@@ -378,10 +389,6 @@ ul {
 #flower,
 #hibiscus {
   animation: rotate_flower 15s normal linear infinite;
-}
-
-:root {
-  --vitesseFleurs: 5s;
 }
 
 .swiper {
