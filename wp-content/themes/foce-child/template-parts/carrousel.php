@@ -19,11 +19,11 @@ $characters_query = new WP_Query($args);
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <?php
-                while ($characters_query->have_posts()) {
+                while ($characters_query->have_posts()) {   //parcourt chaque publication obtenue à partir de la requête $characters_query
                     $characters_query->the_post();
-                    echo '<div class="swiper-slide">';
+                    echo '<div class="swiper-slide">';  //début du conteneur
                     echo '<figure>';
-                    echo get_the_post_thumbnail(get_the_ID(), 'full');
+                    echo get_the_post_thumbnail(get_the_ID(), 'full');    //Affiche l'image mise en avant de la publication actuelle.
                     echo '<figcaption>';
                     the_title();
                     echo '</figcaption>';

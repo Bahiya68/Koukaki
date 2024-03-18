@@ -8,27 +8,23 @@ get_header();
     <section class="section banner">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
-            <source class="video"
-                src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
-                type="video/mp4">
+            <source class="video" src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> " type="video/mp4">
         </video>
-        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
-            alt=" logo Fleurs d'oranger & chats errants">
+        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
     </section>
     <section class="story" id="story">
         <h2 class="section">
             <span class="Animetitre animateTitle">L'</span>
             <span class="Animetitre2 animateTitle2">histoire</span>
         </h2>
-        <article id="" class="section story__article ">
+        <article class="section story__article ">
             <p><?php echo get_theme_mod('story'); ?></p>
-        </article>
-
         </article>
 
         <?php get_template_part('/template-parts/carrousel'); ?>
 
-        <article class="section" id="place">
+        <article id="place" class="section">
+
             <div>
                 <h3>
                     <span class="Animetitre animateTitle">Le</span>
@@ -36,6 +32,11 @@ get_header();
                 </h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
+            <div>
+                <img id="nuagesBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Nuages_bleu.png'; ?> " alt="Nuage Bleu">
+            </div>
+            <img id="fond_ss_nuages" src=" <?php echo get_stylesheet_directory_uri() . '/images/section_lieu_ss_nuages.png'; ?> " alt="fond">
+
 
         </article>
     </section>
