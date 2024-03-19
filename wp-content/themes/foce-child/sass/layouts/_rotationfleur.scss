@@ -8,7 +8,7 @@
  Version: 0.1
  */
 
---vitesseFleurs : 15s;
+:root {--vitesseFleurs: 15s;}
 
 
 
@@ -45,6 +45,8 @@
 #hibiscus {
 	animation: rotate_flower 15s normal linear infinite;
   }
+
+
 
 
 

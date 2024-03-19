@@ -8,9 +8,12 @@ get_header();
     <section class="section banner">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
-            <source class="video" src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> " type="video/mp4">
+            <source class="video"
+                src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
+                type="video/mp4">
         </video>
-        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
+        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
+            alt=" logo Fleurs d'oranger & chats errants">
     </section>
     <section class="story" id="story">
         <h2 class="section">
@@ -32,10 +35,19 @@ get_header();
                 </h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
-            <div>
-                <img id="nuagesBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Nuages_bleu.png'; ?> " alt="Nuage Bleu">
+            <div class="nuages">
+                <img id="nuagesBleu" style="position: absolute;" data-bottom-top="transform:translate3d(300px, 0px, 0)"
+                    data-top-bottom="transform:translate3d(0, 0px, 0)"
+                    src=" <?php echo get_stylesheet_directory_uri() . '/images/big_cloud.png'; ?> " alt="Gros nuage">
+
+                <img id="nuagesBleu" style="position: absolute;" data-bottom-top="transform:translate3d(300px, 0px, 0)"
+                    data-top-bottom="transform:translate3d(0, 0px, 0)"
+                    src=" <?php echo get_stylesheet_directory_uri() . '/images/little_cloud.png'; ?> "
+                    alt="Petit nuage">
             </div>
-            <img id="fond_ss_nuages" src=" <?php echo get_stylesheet_directory_uri() . '/images/section_lieu_ss_nuages.png'; ?> " alt="fond">
+            <!-- <img id="fond_ss_nuages"
+                src=" <?php echo get_stylesheet_directory_uri() . '/images/section_lieu_ss_nuages.png'; ?> "
+                alt="Fond sans nuage"> -->
 
 
         </article>

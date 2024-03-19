@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@800&display=swap');
 
 
- #story,
- #characters,
- #place,
- #studio {
+.body {
     scroll-behavior: smooth;
+    
  }
+.overflow {
+overflow-y: hidden;
+}
 
+.main-navigation ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 
 // Création et animation de l'icon burger
 .burger {
@@ -21,20 +27,22 @@
 
     span {
         width: 100%;
-        height: 4px;
+        height: 2px;
         display: block;
         background-color: black;
         transform: translateY(-50%);
         transition: background-color 0.5s ease-in-out;
+        border-radius:10px;
 
         &::before, 
         &::after {
             content: "";
         position: absolute;
         width: 100%;
-        height: 4px;
+        height: 2px;
         background-color: black;
         transition: transform 0.5s ease-in-out;
+        border-radius:10px;
         }
 
         &:before {
@@ -102,7 +110,7 @@
          text-decoration: none;
          font-family: "Roboto Mono" ,monospace;
          font-size: 64px;
-         font-weight: bold;
+         font-weight: 400;
          
         
      }
