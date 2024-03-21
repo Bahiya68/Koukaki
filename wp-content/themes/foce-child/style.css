@@ -421,6 +421,24 @@ ul {
   background-image: url("./images/section_lieu_ss_nuages.png");
 }
 
+.petitNuageBleu {
+  position: absolute;
+  left: 850px;
+  bottom: 400px;
+  height: 55px;
+  filter: blur(12px);
+  transition: transform 0.5s ease-out; /* Transition sur la transformation */
+}
+
+.grosNuageBleu {
+  position: absolute;
+  left: 1100px;
+  bottom: 500px;
+  height: 120px;
+  filter: blur(12px);
+  transition: transform 0.5s ease-out; /* Transition sur la transformation */
+}
+
 @media (max-width: 700px) {
   .main-navigation {
     height: 80px;

@@ -1,7 +1,3 @@
-console.log(
-  " le script javascript lancé se nomme animation_fleurs_scroll.js et il est fonctionnel "
-);
-
 const observertitlesOptions = {
   root: null,
 };

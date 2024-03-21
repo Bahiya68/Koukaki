@@ -17,3 +17,25 @@ window.addEventListener("scroll", function () {
     element.classList.add("logo");
   }
 });
+
+// parallax horizontale des nuages
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  const parallaxBg = document.querySelector(".grosNuageBleu");
+  const parallaxPt = document.querySelector(".petitNuageBleu");
+  const parallaxSection = document.querySelector(".story #place h3");
+  const sectionTop = parallaxSection.offsetTop; //récupèration de la position verticale
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY;
+    if (scrollTop >= sectionTop) {
+      //Si le défilement est supérieur ou égal à la position verticale de la section
+      const scrollAmount = scrollTop - sectionTop;
+      const translation = Math.min(scrollAmount, 300);
+      parallaxBg.style.transform = "translateX(-" + translation + "px)";
+      parallaxPt.style.transform = "translateX(-" + translation + "px)";
+    } else {
+      parallaxBg.style.transform = "translateX(0)";
+    }
+  });
+});
