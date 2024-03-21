@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const scrollTop = window.scrollY;
     if (scrollTop >= sectionTop) {
       //Si le défilement est supérieur ou égal à la position verticale de la section
-      const scrollAmount = scrollTop - sectionTop;
-      const translation = Math.min(scrollAmount, 300);
+      const scrollAmount = scrollTop - sectionTop; //quantité de défilement par rapport à la position de la section
+      const translation = Math.min(scrollAmount, 300); // limite la valeur de translation (translation) à un maximum de 300 pixels
       parallaxBg.style.transform = "translateX(-" + translation + "px)";
       parallaxPt.style.transform = "translateX(-" + translation + "px)";
     } else {

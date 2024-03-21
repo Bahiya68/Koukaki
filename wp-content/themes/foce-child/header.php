@@ -44,32 +44,37 @@
                     <img class="logoMenuBurger"
                         src=" <?php echo get_stylesheet_directory_uri() . '/images/logoburger.png'; ?> "
                         alt=" logo Fleurs d'oranger & chats errants">
+                    <ul class="liste">
+                        <li><a href="#story">Histoire</a></li>
+                        <li><a href="#characters">Personnages</a></li>
+                        <li><a href="#place">Lieu</a></li>
+                        <li><a href="#studio">Studio Koukaki</a></li>
+                    </ul>
+                    <p class="signature">STUDIO KOUKAKI</p>
+                    <img id="orchid" src=" <?php echo get_template_directory_uri() . '/assets/images/orchid.png'; ?> "
+                        alt="Fleur violette">
+                    <img id="hibiscus"
+                        src=" <?php echo get_template_directory_uri() . '/assets/images/Hibiscus.png'; ?> "
+                        alt="Hibiscus">
+                    <img id="sunflower"
+                        src=" <?php echo get_template_directory_uri() . '/assets/images/Sunflower.png'; ?> "
+                        alt="Sunflower">
+                    <img id="flower" src=" <?php echo get_template_directory_uri() . '/assets/images/flower.png'; ?> "
+                        alt="Fleur">
+                    <img id="random_flower"
+                        src=" <?php echo get_template_directory_uri() . '/assets/images/random_flower.png'; ?> "
+                        alt="Fleur rose">
+                    <img id="chat_bleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_bleu.png'; ?> "
+                        alt="Chat Bleu">
+                    <img id="chat_orange"
+                        src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_orange.png'; ?> "
+                        alt="Chat Orange">
+                    <img id="chat_gris" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_gris.png'; ?> "
+                        alt="Chat Gris">
                 </div>
-                <img id="orchid" src=" <?php echo get_template_directory_uri() . '/assets/images/orchid.png'; ?> "
-                    alt="Fleur violette">
-                <img id="hibiscus" src=" <?php echo get_template_directory_uri() . '/assets/images/Hibiscus.png'; ?> "
-                    alt="Hibiscus">
-                <img id="sunflower" src=" <?php echo get_template_directory_uri() . '/assets/images/Sunflower.png'; ?> "
-                    alt="Sunflower">
-                <img id="flower" src=" <?php echo get_template_directory_uri() . '/assets/images/flower.png'; ?> "
-                    alt="Fleur">
-                <img id="random_flower"
-                    src=" <?php echo get_template_directory_uri() . '/assets/images/random_flower.png'; ?> "
-                    alt="Fleur rose">
-                <img id="chat_bleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_bleu.png'; ?> "
-                    alt="Chat Bleu">
-                <img id="chat_orange" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_orange.png'; ?> "
-                    alt="Chat Orange">
-                <img id="chat_gris" src=" <?php echo get_stylesheet_directory_uri() . '/images/Chat_gris.png'; ?> "
-                    alt="Chat Gris">
 
-                <ul class="liste">
-                    <li><a href="#story">Histoire</a></li>
-                    <li><a href="#characters">Personnages</a></li>
-                    <li><a href="#place">Lieu</a></li>
-                    <li><a href="#studio">Studio Koukaki</a></li>
-                </ul>
-                <p class="signature">STUDIO KOUKAKI</p>
+            </section>
+
     </div>
 
     <div class="menu_burger">

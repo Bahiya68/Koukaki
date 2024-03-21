@@ -35,13 +35,13 @@ get_header();
                 </h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
-            <!-- <div class="parallax-section"> -->
+
             <img class=" grosNuageBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/big_cloud.png'; ?> "
                 alt="Gros nuage">
 
             <img class="petitNuageBleu"
                 src=" <?php echo get_stylesheet_directory_uri() . '/images/little_cloud.png'; ?> " alt="Petit nuage">
-            <!-- </div> -->
+
         </article>
     </section>
 
