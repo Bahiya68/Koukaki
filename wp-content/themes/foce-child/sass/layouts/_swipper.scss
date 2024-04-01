@@ -1,6 +1,4 @@
 
-
-
 .swiper {
     width: 100%;
     padding-top: 100px;
@@ -10,16 +8,25 @@
     &-slide {
         background-position: center;
         background-size: cover;
-        width: 450px;
-        height: 450px;
+        width:  500px;
+        //height: 450px;
         text-align: center;
-  
 
         img {
         display: block;
         width: 100%;
         }
     }   
-
-
 }
+
+figcaption {
+    max-width:500px;
+    }
+
+figure {
+    max-width:500px;
+	}
+
+figure img {
+    max-width:500px;
+    }

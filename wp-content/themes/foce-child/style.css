@@ -330,7 +330,7 @@ ul {
 
 .logoposition {
   position: absolute;
-  top: 63%;
+  top: 62%;
 }
 
 .banner img {
@@ -414,13 +414,24 @@ ul {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 450px;
-  height: 450px;
+  width: 500px;
   text-align: center;
 }
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+figcaption {
+  max-width: 500px;
+}
+
+figure {
+  max-width: 500px;
+}
+
+figure img {
+  max-width: 500px;
 }
 
 .story #place {
@@ -445,7 +456,20 @@ ul {
   transition: transform 0.5s ease-out; /* Transition sur la transformation */
 }
 
+@media (max-width: 1850px) {
+  .logoposition {
+    top: 60%;
+  }
+}
+@media (max-width: 1600px) {
+  .logoposition {
+    top: 58%;
+  }
+}
 @media (max-width: 1440px) {
+  .site-footer::after {
+    display: none;
+  }
   .main-navigation {
     width: 100%;
   }
@@ -453,7 +477,7 @@ ul {
     display: none;
   }
   .burger {
-    left: 45%;
+    left: 48%;
   }
   .main-navigation ul {
     justify-content: center;
@@ -468,10 +492,18 @@ ul {
   .main-navigation ul {
     padding-left: 0px !important;
   }
+  .titreh3 {
+    width: 100%;
+  }
 }
 @media (max-width: 1340px) {
-  .swiper-slide img {
-    width: 80%;
+  .site-footer::before {
+    display: none;
+  }
+  .nominationOscar {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 @media (max-width: 950px) {
@@ -484,8 +516,14 @@ ul {
   .logoposition {
     top: 100%;
   }
+  .nominationOscar {
+    flex-direction: column;
+  }
 }
 @media (max-width: 700px) {
+  .titreNomination {
+    font-size: 25px;
+  }
   .main-navigation {
     height: 80px;
     top: 0px;
@@ -493,20 +531,8 @@ ul {
   .site-title {
     display: none;
   }
-}
-@media (max-width: 600px) {
-  .menuFull a {
-    font-size: 34px;
-  }
-  #chat_bleu {
-    width: 110px;
-    top: 150px;
-    left: 267px;
-  }
-}
-@media (max-width: 700px) {
-  .titreNomination {
-    font-size: 15px;
+  .burger {
+    left: 45%;
   }
   #orchid {
     width: 22%;
@@ -516,12 +542,55 @@ ul {
     top: 76%;
   }
 }
+@media (max-width: 600px) {
+  .titreNomination {
+    font-size: 15px;
+    font-weight: 0;
+    line-height: 15px;
+  }
+  .menuFull a {
+    font-size: 34px;
+  }
+  #chat_bleu {
+    width: 110px;
+    top: 150px;
+    left: 267px;
+  }
+  figcaption {
+    max-width: 300px;
+  }
+  figure img {
+    max-width: 300px;
+  }
+  figure {
+    max-width: 300px;
+    margin: 0;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 520px) {
+  .background-image {
+    width: auto;
+  }
+}
 @media (max-width: 320px) {
+  .banner video {
+    display: none;
+  }
   #orchid {
     width: 22%;
     left: 1%;
   }
   #hibiscus {
     top: 86%;
+  }
+  .titreNomination {
+    padding: 0;
+  }
+  .nominationOscar {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

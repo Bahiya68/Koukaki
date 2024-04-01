@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       const translation = Math.min(scrollAmount, 300); // limite la valeur de translation (translation) à un maximum de 300 pixels
       parallaxBg.style.transform = "translateX(-" + translation + "px)";
       parallaxPt.style.transform = "translateX(-" + translation + "px)";
+      //console.log("scrollAmount" + scrollAmount);
+      //console.log("scrollTop" + scrollTop);
     } else {
       parallaxBg.style.transform = "translateX(0)";
     }
