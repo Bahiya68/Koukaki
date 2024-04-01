@@ -572,8 +572,11 @@ figure img {
   }
 }
 @media (max-width: 520px) {
-  .background-image {
-    width: auto;
+  h2, h3 {
+    font-size: 26px;
+  }
+  .swiper {
+    padding: 0;
   }
 }
 @media (max-width: 320px) {
@@ -586,11 +589,5 @@ figure img {
   }
   #hibiscus {
     top: 86%;
-  }
-  .titreNomination {
-    padding: 0;
-  }
-  .nominationOscar {
-    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
