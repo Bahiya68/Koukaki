@@ -579,10 +579,12 @@ figure img {
     padding: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .banner video {
     display: none;
   }
+}
+@media (max-width: 320px) {
   #orchid {
     width: 22%;
     left: 1%;

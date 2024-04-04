@@ -8,12 +8,9 @@ get_header();
     <section class="section banner">
 
         <video autoplay loop muted poster="<?php echo get_template_directory_uri() . './assets/images/banner.png'; ?>">
-            <source class="video"
-                src="<?php echo get_stylesheet_directory_uri() . '/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?> "
-                type="video/mp4">
+            <source class="video" src="<?php echo get_stylesheet_directory_uri() . '/images/StudioKoukakivideo.mp4'; ?> " type="video/mp4">
         </video>
-        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "
-            alt=" logo Fleurs d'oranger & chats errants">
+        <img class="logo" src=" <?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt=" logo Fleurs d'oranger & chats errants">
     </section>
     <section class="story" id="story">
         <h2 class="section">
@@ -36,11 +33,9 @@ get_header();
                 <p><?php echo get_theme_mod('place'); ?></p>
             </div>
 
-            <img class=" grosNuageBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/big_cloud.png'; ?> "
-                alt="Gros nuage">
+            <img class=" grosNuageBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/big_cloud.png'; ?> " alt="Gros nuage">
 
-            <img class="petitNuageBleu"
-                src=" <?php echo get_stylesheet_directory_uri() . '/images/little_cloud.png'; ?> " alt="Petit nuage">
+            <img class="petitNuageBleu" src=" <?php echo get_stylesheet_directory_uri() . '/images/little_cloud.png'; ?> " alt="Petit nuage">
 
         </article>
     </section>

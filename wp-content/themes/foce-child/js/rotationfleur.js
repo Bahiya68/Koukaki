@@ -2,7 +2,7 @@ const observertitlesOptions = {
   root: null,
 };
 
-// Accélaration des fleurs au scroll
+// Accéleration des fleurs au scroll
 // pour la compréhension
 // - https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty
 // - https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event

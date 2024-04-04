@@ -19,7 +19,6 @@ window.addEventListener("scroll", function () {
 });
 
 // parallax horizontale des nuages
-
 document.addEventListener("DOMContentLoaded", function (event) {
   const parallaxBg = document.querySelector(".grosNuageBleu");
   const parallaxPt = document.querySelector(".petitNuageBleu");

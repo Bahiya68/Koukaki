@@ -75,19 +75,5 @@
 
             </section>
 
+        </header><!-- #masthead -->
     </div>
-
-    <div class="menu_burger">
-
-    </div>
-    </div>
-
-    </section>
-
-
-    </div>
-
-    </section>
-
-
-    </header><!-- #masthead -->
